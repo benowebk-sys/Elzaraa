@@ -638,3 +638,119 @@ section {
 .visible {
     opacity: 1 !important;
 }
+
+/* =================================
+   RESPONSIVE - MOBILE ADJUSTMENTS
+   ================================= */
+
+/* Make images fluid and inputs readable on mobile */
+img,
+.hero-photo,
+.company-logo,
+.logo-img,
+.header-logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Prevent iOS auto-zoom on form focus */
+body {
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero {
+        height: auto;
+        padding: 40px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: right;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .companies-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .container {
+        width: 94%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 22px;
+    }
+
+    .btn-primary {
+        padding: 12px 22px;
+        font-size: 15px;
+    }
+
+    /* Small mobile slide-in menu (requires JS to toggle .hamburger.active) */
+    .nav-menu {
+        position: absolute;
+        top: 64px;
+        right: 0;
+        background: linear-gradient(135deg, #071014 0%, #0b151a 100%);
+        width: 220px;
+        padding: 18px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        display: block;
+    }
+
+    .hamburger.active ~ .nav-menu {
+        transform: translateX(0);
+    }
+
+    .nav-menu .nav-link {
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.03);
+    }
+
+    .logo-header-content {
+        flex-direction: row;
+        gap: 12px;
+        align-items: center;
+    }
+}
