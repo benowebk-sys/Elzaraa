@@ -600,6 +600,14 @@ section {
     margin: 0;
 }
 
+.footer .designer {
+    font-size: 13px;
+    color: #ccc;
+    margin-top: 6px;
+    direction: ltr;
+    font-weight: 500;
+}
+
 /* =================================
    ANIMATIONS & TRANSITIONS
    ================================= */
