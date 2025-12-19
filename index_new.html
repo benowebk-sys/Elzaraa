@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة الزهراء للأدوات الكهربائية</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.jpg" alt="شركة الزهراء" class="logo-img">
+                <span>الزهراء</span>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                <li><a href="#about" class="nav-link">عن الشركة</a></li>
+                <li><a href="#services" class="nav-link">المنتجات</a></li>
+                <li><a href="#portfolio" class="nav-link">الفئات</a></li>
+                <li><a href="#contact" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">شركة الزهراء للأدوات الكهربائية</h1>
+            <p class="hero-subtitle">أدوات كهربائية موثوقة بأفضل الأسعار | توصيل سريع | ضمان شامل</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('contact')">اطلب الآن</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('services')">المنتجات</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1565214566112-78823e63d05d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="أدوات كهربائية" class="hero-photo">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">عن الشركة</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>متخصصون في الأدوات الكهربائية منذ 20 سنة</h3>
+                    <p>شركة الزهراء تقدم أجود أنواع الأدوات والمعدات الكهربائية بأسعار تنافسية وجودة عالية. نحن نخدم المقاولين والمتاجر والعملاء الأفراد بكل احترافية.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> منتجات أصلية بضمان شامل</li>
+                        <li><i class="fas fa-check"></i> أسعار مميزة وتنافسية</li>
+                        <li><i class="fas fa-check"></i> توصيل سريع إلى جميع الأنحاء</li>
+                        <li><i class="fas fa-check"></i> خدمة عملاء متوفرة 24/7</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h4>10000+</h4>
+                        <p>عميل راضي</p>
+                    </div>
+                    <div class="stat">
+                        <h4>5000+</h4>
+                        <p>منتج متوفر</p>
+                    </div>
+                    <div class="stat">
+                        <h4>20+</h4>
+                        <p>سنة خبرة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products / Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">أساسيات الكهرباء والتشطيبات</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1581092916692-8d71e590d2e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60" alt="أساسيات الكهرباء">
+                    </div>
+                    <h3>أساسيات الكهرباء</h3>
+                    <p>أسلاك، مفاتيح، مكابس، وقواطع بمعايير آمنة ومواد موثوقة.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1586880252093-49ecd6d06e28?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60" alt="تشطيبات كهربائية">
+                    </div>
+                    <h3>التشطيبات</h3>
+                    <p>تشطيبات كهربائية كاملة للمشاريع السكنية والتجارية مع تنسيق احترافي.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60" alt="تركيب وصيانة">
+                    </div>
+                    <h3>تركيب وصيانة</h3>
+                    <p>خدمات تركيب وصيانة احترافية مع فريق فني مؤهل.</p>
+                </div>
+            </div>
+
+            <!-- Partners -->
+            <div class="partners">
+                <h3>متعاقدون مع شركات</h3>
+                <p class="partners-list">فينوس، سانشى، شرم، شواب، افينا، ساس ايكو</p>
+                <div class="partners-logos">
+                    <img src="https://via.placeholder.com/140x70?text=فينوس" alt="فينوس">
+                    <img src="https://via.placeholder.com/140x70?text=سانشى" alt="سانشى">
+                    <img src="https://via.placeholder.com/140x70?text=شرم" alt="شرم">
+                        <img src="logos/venus.svg" alt="فينوس" class="company-logo">
+                        <h3>فينوس</h3>
+                    </div>
+                    <div class="company-card">
+                        <img src="logos/schwab.svg" alt="شواب" class="company-logo">
+                        <h3>شواب</h3>
+                    </div>
+                    <div class="company-card">
+                        <img src="logos/sanchi.svg" alt="سانش شرم" class="company-logo">
+                        <h3>سانش شرم</h3>
+                    </div>
+                    <div class="company-card">
+                        <img src="logos/saseco.svg" alt="ساس ايكو" class="company-logo">
+                        <h3>ساس ايكو</h3>
+                    </div>
+                    <div class="company-card">
+                        <img src="logos/afina.svg" alt="افينا" class="company-logo">
+                        <h3>افينا</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">أعمالنا</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="web">المشاريع</button>
+                <button class="filter-btn" data-filter="installation">تركيب</button>
+                <button class="filter-btn" data-filter="maintenance">صيانة</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1582719478174-2f6b2f3b1b6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60" alt="مشروع">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <h3>مشروع تشطيب كهربائي</h3>
+                    <p>تشطيبات</p>
+                </div>
+                <div class="portfolio-item" data-category="installation">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1582719476648-6c3d8d3b7b53?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60" alt="مشروع">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <h3>تركيب أنظمة كهربائية</h3>
+                    <p>تركيب</p>
+                </div>
+                <div class="portfolio-item" data-category="maintenance">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1519741491717-5a3b9f1d7f1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60" alt="مشروع">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <h3>صيانة دورية</h3>
+                    <p>صيانة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">اتصل بنا</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>الهاتف</h4>
+                            <p>+966 50 123 4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>البريد الإلكتروني</h4>
+                            <p>info@alzahra.com.sa</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>العنوان</h4>
+                            <p>الرياض، المملكة العربية السعودية</p>
+                        </div>
+                    </div>
+*** End Patch
